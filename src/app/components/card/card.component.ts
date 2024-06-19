@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PokeAPIService } from '../../services/poke-api.service';
 
 @Component({
   selector: 'card',
@@ -8,7 +9,13 @@ import { Component } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
   name: string = 'Charmander';
   attributes: string[] = ['Fire', 'Rock'];
+
+  constructor(private service: PokeAPIService) {}
+
+  ngOnInit(): void {
+    this.service.getPokemon('Teste pokemon');
+  }
 }
