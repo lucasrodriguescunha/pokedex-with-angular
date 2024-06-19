@@ -1,0 +1,20 @@
+<div class="container">
+  <article class="card">
+
+    <header class="card-header">
+      <h1 class="card-title">{{ name }}</h1>
+    </header>
+
+    <figure class="card-body">
+      <img src="" alt="Imagem do Pokémon Charmander" />
+      <figcaption class="card-caption">Charmander</figcaption>
+    </figure>
+
+    <footer class="card-stats">
+      <span *ngFor="let type of attributes" class="card-stats-type">
+        {{ type }}
+      </span>
+    </footer>
+
+  </article>
+</div>

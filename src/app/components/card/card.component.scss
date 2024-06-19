@@ -1,0 +1,50 @@
+@import "../../../styles.scss";
+
+.container {
+  display: flex;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $background-card;
+    border-radius: 5px;
+    border: 1px solid #000;
+    height: 300px;
+    width: 250px;
+
+    .card-header {
+      .card-title {
+        color: $primary-color;
+        text-align: center;
+        margin: 10px;
+      }
+    }
+
+    .card-body {
+      background-color: $background-body;
+      border-radius: 5px;
+      height: 80%;
+      width: 80%;
+      margin: 0 auto;
+
+      .card-caption {
+        text-align: center;
+      }
+    }
+
+    .card-stats {
+      margin: 20px;
+
+      .card-stats-type {
+        border-radius: 5px;
+        color: $primary-color;
+        background-color: $stats-color;
+        padding: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
