@@ -1,17 +1,28 @@
+<div class="search-pokemon">
+  <p>Desenvolvido por Lucas Rodrigues Cunha</p>
+  <input
+    type="text"
+    (input)="searchPokemon($any($event.target).value)"
+    placeholder="Enter the name of a Pokémon"
+  />
+</div>
+
 <div class="container">
   <article class="card">
     <header class="card-header">
-      <h1 class="card-title">{{ name }}</h1>
+      <h1 class="card-title">{{ pokemon.name }}</h1>
     </header>
 
     <figure class="card-body">
-      <img src="" alt="Imagem do Pokémon Charmander" />
-      <figcaption class="card-caption">Charmander</figcaption>
+      <img
+        src="{{ pokemon.sprites.front_default }}"
+        alt="Imagem do Pokémon {{ pokemon.name }}"
+      />
     </figure>
 
     <footer class="card-stats">
-      <span *ngFor="let type of attributes" class="card-stats-type">
-        {{ type }}
+      <span *ngFor="let t of pokemon.types" class="card-stats-type">
+        {{ t.type.name }}
       </span>
     </footer>
   </article>

@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, RouterOutlet, RouterLink, CardComponent],
 
-  template: ` <h1>Pokédex</h1>
+  template: ` <h1 style="text-align: center; margin: 20px;">Pokédex</h1>
     <card></card>
     <router-outlet />`,
 
