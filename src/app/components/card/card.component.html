@@ -10,7 +10,7 @@
 <div class="container">
   <article class="card">
     <header class="card-header">
-      <h1 class="card-title">{{ pokemon.name }}</h1>
+      <h1 class="card-title">{{ pokemon.name | uppercase }}</h1>
     </header>
 
     <figure class="card-body">
@@ -22,7 +22,7 @@
 
     <footer class="card-stats">
       <span *ngFor="let t of pokemon.types" class="card-stats-type">
-        {{ t.type.name }}
+        {{ t.type.name | uppercase }}
       </span>
     </footer>
   </article>
