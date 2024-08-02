@@ -82,3 +82,14 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  // Este bloco de código será aplicado a telas com largura mínima de 600px
+  .search-pokemon {
+    p {
+    }
+    input {
+      width: 300px;
+    }
+  }
+}
