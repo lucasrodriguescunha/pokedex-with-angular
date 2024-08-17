@@ -7,11 +7,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, RouterLink, CardComponent],
-
-  template: ` <h1 style="text-align: center; margin: 20px;">Pokédex</h1>
-    <card></card>
-    <router-outlet />`,
-
+  templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {}

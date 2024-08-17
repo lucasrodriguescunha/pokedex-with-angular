@@ -6,10 +6,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-image: url("https://th.bing.com/th/id/R.617b32d5469dfe093cf9e942aa4e72ca?rik=SUUP5Mh0eN4Rag&pid=ImgRaw&r=0");
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-position: center; /* Centraliza a imagem */
+  background-size: auto; /* Mantém o tamanho original da imagem */
+}
+
 $background-card: #232323;
-
 $background-body: #616161;
-
 $primary-color: #ffffff;
-
 $stats-color: #f1f1f1;
